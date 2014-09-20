@@ -41,6 +41,11 @@ function generateOutput() {
   $('#output').val(output);
 }
 
+function OpenLink(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
 $(function() {
   generateOutput();
 
@@ -80,4 +85,24 @@ $(function() {
       generateOutput();
 		}
 	}, '[data-trigger]');
+
+  // Handle select all button
+  $('body').on({
+    'click': function(e) {
+      e.preventDefault();
+
+      $('#output').select();
+    }
+  }, '#select-all');
+
+  // Handle preview button
+  $('body').on({
+    'click': function(e) {
+      e.preventDefault();
+
+      if ($('#output-link').hasClass('selected')) {
+        OpenLink($('#output').val());
+      }
+    }
+  }, '#preview');
 });

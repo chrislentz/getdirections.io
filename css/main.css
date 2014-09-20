@@ -119,3 +119,17 @@ label {
   height: 50px;
   border: 1px solid #ccc;
 }
+
+/* Output */
+.output-container {
+  margin-top: 30px;
+}
+
+.output-container h2 {
+  float: left;
+}
+
+.output-container > .controls {
+  float: right;
+  margin-top: 9px;
+}
