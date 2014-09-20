@@ -3,40 +3,33 @@ function generateOutput() {
   var src = '';
   var data = '';
 
-  if ($('#output-link').hasClass('selected')) {
-    src = 'https://www.google.com/maps/';
+  src = 'https://www.google.com/maps/';
 
-    if ($('#saddr').val() != '') {
-      if (data == '') { data += '?' } else { data += '&'; }
+  if ($('#saddr').val() != '') {
+    if (data == '') { data += '?' } else { data += '&'; }
 
-      data += 'saddr=' + encodeURIComponent($('#saddr').val());
-    }
-
-    if ($('#daddr').val() != '') {
-      if (data == '') { data += '?' } else { data += '&'; }
-
-      data += 'daddr=' + encodeURIComponent($('#daddr').val());
-    }
-
-    if (data != '') {
-      if ($('#directions-transit').hasClass('selected')) {
-        data += '&dirflg=r';
-      }
-      else if ($('#directions-walking').hasClass('selected')) {
-        data += '&dirflg=w';
-      }
-      else if ($('#directions-biking').hasClass('selected')) {
-        data += '&dirflg=b';
-      }
-    }
-
-    output = src + data;
+    data += 'saddr=' + encodeURIComponent($('#saddr').val());
   }
-  else if ($('#output-embeddable').hasClass('selected')) {
-    src = 'https://www.google.com/maps/embed?';
 
-    output = '<iframe src="' + src + '" width="600" height="450" frameborder="0" style="border:0"></iframe>';
+  if ($('#daddr').val() != '') {
+    if (data == '') { data += '?' } else { data += '&'; }
+
+    data += 'daddr=' + encodeURIComponent($('#daddr').val());
   }
+
+  if (data != '') {
+    if ($('#directions-transit').hasClass('selected')) {
+      data += '&dirflg=r';
+    }
+    else if ($('#directions-walking').hasClass('selected')) {
+      data += '&dirflg=w';
+    }
+    else if ($('#directions-biking').hasClass('selected')) {
+      data += '&dirflg=b';
+    }
+  }
+
+  output = src + data;
 
   $('#output').val(output);
 }
@@ -100,9 +93,7 @@ $(function() {
     'click': function(e) {
       e.preventDefault();
 
-      if ($('#output-link').hasClass('selected')) {
-        OpenLink($('#output').val());
-      }
+      OpenLink($('#output').val());
     }
   }, '#preview');
 });
