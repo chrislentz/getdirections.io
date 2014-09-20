@@ -32,34 +32,11 @@ a, a:link, a:visited, a:hover, a:active {
 h1 {
 	font-size: 50px;
 	line-height: 100%;
-	margin-bottom: 10px;
 }
 
 h2 {
 	font-size: 184%;
 	line-height: 120%;
-	margin-bottom: 10px;
-}
-
-h3 {
-	font-size: 154%;
-	line-height: 120%;
-	font-weight: 300;
-	margin-bottom: 10px;
-}
-
-h4 {
-	font-size: 123%;
-	line-height: 120%;
-	font-weight: 300;
-	margin-bottom: 10px;
-}
-
-h5 {
-	font-size: 92%;
-	line-height: 120%;
-	font-weight: 300;
-	margin-bottom: 10px;
 }
 
 p {
@@ -88,10 +65,11 @@ h1.logo span.small {
   display: none;
 }
 
-.container-directions {
+.directions-container {
   margin-top: 30px;
 }
 
+/* Tabs Interface */
 ul.tabs {
   border: 1px solid #26ADE4;
   overflow: hidden;
@@ -115,7 +93,8 @@ ul.tabs li.selected, ul.tabs li:hover {
   color: #fff;
 }
 
-form.generate {
+/* Form */
+form {
   clear: both;
   text-align: left;
   margin-top: 10px;
