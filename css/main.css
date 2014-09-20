@@ -1,0 +1,142 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900,300italic);
+
+/*----------------------------------------------------------------------------
+ General
+----------------------------------------------------------------------------*/
+html, body {
+	width: 100%;
+	text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, input, textarea, button {
+	font-family: 'Lato', Helvetica, Arial, sans-serif !important;
+	color: #363636;
+	font-size: 13px;
+	line-height: 150%;
+	font-weight: 400;
+}
+
+body {
+	background: #ffffff url('../images/bg.jpg') left top repeat;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #2771be;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 100%;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 184%;
+	line-height: 120%;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 154%;
+	line-height: 120%;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 123%;
+	line-height: 120%;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 92%;
+	line-height: 120%;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.site-container {
+  width: 400px;
+  margin: 75px auto 0 auto;
+}
+
+h1.logo {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+h1.logo span {
+  font-weight: 100;
+}
+
+h1.logo span.small {
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container-directions {
+  margin-top: 30px;
+}
+
+ul.tabs {
+  border: 1px solid #26ADE4;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  background: #4DBCE9;
+}
+
+ul.tabs li {
+  float: left;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+ul.tabs li:first-child {
+  border-left: 0px solid #26ADE4;
+}
+
+ul.tabs li.selected, ul.tabs li:hover {
+  background: #26ADE4;
+  color: #fff;
+}
+
+form.generate {
+  clear: both;
+  text-align: left;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-field input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.form-field textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+}
