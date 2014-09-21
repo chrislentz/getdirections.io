@@ -1,3 +1,4 @@
+// Generate output
 function generateOutput() {
   var output = '';
   var src = '';
@@ -34,6 +35,7 @@ function generateOutput() {
   $('#output').val(output);
 }
 
+// Open link
 function OpenLink(url) {
   var win = window.open(url, '_blank');
   win.focus();
