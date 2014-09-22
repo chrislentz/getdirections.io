@@ -59,7 +59,7 @@ $(function() {
   }, '[data-tabs="tabs"] li');
 
   // Generate on saddr or daddr edit
-  $('#saddr, #daddr').keyup(function(e) {
+  $('#saddr, #daddr').bind('change keyup input', function(e) {
     generateOutput();
   });
 
