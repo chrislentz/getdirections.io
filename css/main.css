@@ -28,7 +28,8 @@ html, body, input, textarea, button {
 }
 
 body {
-	background: #ffffff url('../images/bg.jpg') left top repeat;
+	background: #ffffff url('../images/bg.png') left top repeat;
+	background-size: 16px 16px;
 }
 
 a, a:link, a:visited, a:hover, a:active {
